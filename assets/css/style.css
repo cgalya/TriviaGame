@@ -1,0 +1,29 @@
+body {
+	background-image: url("../images/gilligan.jpg");
+}
+
+h1 {
+	font-family: 'Fontdiner Swanky', cursive;
+	font-size: 4.9em;
+	color: #fff;
+	background: #d87527;
+	line-height: 70px;
+	border-radius: 15px;
+	border: 3px solid #fff;
+}
+
+.jumbotron {
+	height: 500px;
+	background-color: #3baab4;
+	color: #fff;
+	padding: 10px;
+	font-family: 'Cherry Cream Soda', cursive;
+	border: 3px solid #fff;
+	border-radius: 15px !important;
+}
+
+#start {
+	position: relative;
+	top: 130px;
+	background: #cc9bcc;
+}
