@@ -1,6 +1,6 @@
 window.onload = function() {
 //html element selector variables
-    var ask = $("#question");
+		var ask = $("#question");
     var first = $("#answer1");
     var second = $("#answer2");
     var third = $("#answer3");
@@ -136,7 +136,7 @@ window.onload = function() {
     countdown.show();
   //set up the timer to count down from 31 every second
     var count = 31;
-    var counter = setInterval(timer, 1000);
+		var counter = setInterval(timer, 1000);
   //write the question and answers for the current show  
     ask.html(thisShow.question);
     first.html(thisShow.answer1);
@@ -144,15 +144,15 @@ window.onload = function() {
     third.html(thisShow.answer3);
     fourth.html(thisShow.answer4);
   //start the countdown and write it on the page
-    function timer() {
-      count--;
+		function timer() {
+		  count--;
       $("#timer").html(count);
   //if the timer runs out
-      if (count === 0) {
+		  if (count === 0) {
         //increase unanswered count by one
-        unansweredCounter++;
+     		unansweredCounter++;
         //stop the countdown
-        clearInterval(counter); 
+        clearInterval(counter);	
         //write time's up on the page         
         ask.html("Time wasn't on your side...");
         //display the correct answer
@@ -162,12 +162,12 @@ window.onload = function() {
         //erase the answers and remove their styling by removing their class
         ansGroup.html("").removeClass("answer");
         //stay on this page for six seconds, then change the background for the next show and call the function for the next question
-        setTimeout(function() {
+     		setTimeout(function() {
           $(document.body).css(thisShow.background, thisShow.backgroundUrl);
           nextQuestion();
-          },6000);    
-        }
-      }
+        	},6000);    
+  		  }
+		  }
     //set a click event on the answers  
       $("p").click(function() {
      //if the player clicks the correct answer, much the same as if count === 0, except increments win counter and shows 'groovy'   

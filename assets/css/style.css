@@ -26,6 +26,7 @@ h1 {
 	position: relative;
 	top: 130px;
 	background: #cc9bcc;
+	cursor: default;
 }
 
 #countdown {
@@ -40,6 +41,7 @@ h1 {
 .answer:hover {
 	background: #d87527;
 	border: 3px solid #fff;
+	cursor: default;
 }
 
 button {
